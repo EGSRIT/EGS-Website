@@ -1,0 +1,14 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    #service_name:
+    #    class: AppBundle\Directory\ClassName
+    #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+    egs.newsletter.newsletter_repo:
+      class: Doctrine\ORM\EntityRepository
+      factory: ['@doctrine.orm.entity_manager', getRepository]
+      arguments:
+        - "NewsletterUser"

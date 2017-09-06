@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="content">
+        <p id="intro">
+            Electronic Gaming Society (EGS) is a Rochester Institute of Technology student government sponsored club operated by students on a volunteer basis. EGS's mission is to provide enjoyable gaming events to a variety of gamers and non-gamers. Weekly meetings are every Wednesday from 8PM - 11PM in the SAU Al Davis room. There are three consecutive LAN parties, various tournaments, and collaborative events scheduled each year.
+        </p>
+        <div class="single-item carousel">
+            <img src="{{ asset('images/Homepage/Image0.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image1.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image2.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image3.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image4.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image5.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image6.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image7.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image8.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image9.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image10.jpg') }}">
+            <img src="{{ asset('images/Homepage/Image11.jpg') }}">
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}

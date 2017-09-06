@@ -1,0 +1,20 @@
+{
+  "name": "egs_website",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "bootstrap": "^3.3.7"
+  }
+}

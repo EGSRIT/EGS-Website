@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="content">
+        <h1 id="memberH1">How to obtain an EGS Membership:</h1>
+        <p id="Membership">RIT SG sponsored clubs, such as EGS is open membership. However, if you want to participate in our specialized membership benefits, we're here for your gaming benefits!
+            <br>Just ask an EGS Executive Board Member to join and we'll sign you up.
+            <br>1 Academic year membership price: $10</p>
+
+        <h2 id="memberH1">Membership Benefits:</h2>
+
+        <h2 id="memberH2">Reduced prices on LAN and tournament entry</h2>
+        <p class="Benefit">Deduction of $5.</p>
+
+        <h2 id="memberH2">Early Access</h2>
+        <p class="Benefit">Early entry of our LAN parties.</p>
+
+        <h2 id="memberH2">T-Shirts!</h2>
+        <p class="Benefit">$5 off of T-Shirt price.<br>
+        <i>Combo Deal; membership and t-shirt for $20. (Original pricing; membership: $10, t-shirt $15. Get $5 off with our sweet combo deal!)</i></p>
+
+        <h2 id="memberH2">GG Giveaway</h2>
+        <p class="Benefit">Get some swag or gaming hardware from our Sponsors!</p>
+
+        <h2 id="memberH2">Game Rentals</h2>
+        <p class="Benefit">EGS has an extensive game library for every platform from old to new generation console games. EGS members are allowed to borrow a game for one week.
+            <br>To borrow a game, the student EGS member must read over the Game Rental Contract and sign it with one of our EGS Executive Board members.
+            <br>Simple Rules; The game must be returned within one week of its signed contract date, in its original condition, and with the 'EGS' label on it. An EGS member may only borrow one game at a time. The EGS member must follow all Federal, State, Local City, and RIT laws and policies. If any violation of this contract occurs or the game disc is returned damaged, the student EGS member's privilege of game renting will be revoked and they will be asked to replace the disc as it is RIT property. To read and discuss the Game Rental contract, and take out a game, please speak with an EGS Executive Board member, and they will gladly assist you.
+            <br>(We will be uploading a game library inventory list soon!)
+        </p>
+
+        <br><br><h2 id="memberH2"><a href="https://goo.gl/forms/S2fLQT0fOexvvm5H2" class="membership-link">Click here</a> to express your interest in becoming an EGS member</h2>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}

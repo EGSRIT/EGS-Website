@@ -1,0 +1,48 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+home:
+  path: /
+  defaults: { _controller: AppBundle:Default:index }
+
+minecraft:
+  path: /communities/minecraft
+  defaults: { _controller: AppBundle:Subgroups/Minecraft:index }
+
+pokemon:
+  path: /communities/pokemon
+  defaults: { _controller: AppBundle:Subgroups/Pokemon:index }
+
+blizzard:
+  path: /communities/blizzard
+  defaults: { _controller: AppBundle:Subgroups/Blizzard:index }
+
+dota2:
+  path: /communities/dota2
+  defaults: { _controller: AppBundle:Subgroups/DOTA2:index }
+
+eboard:
+  path: /about
+  defaults: { _controller: AppBundle:Eboard/EBoard:index }
+
+rhythm:
+  path: /communities/rhythm
+  defaults: { _controller: AppBundle:Subgroups/Rhythm:index }
+
+membership:
+  path: /membership
+  defaults: { _controller: AppBundle:Membership/Membership:index }
+
+lans:
+  path: /events/lans
+  defaults: { _controller: AppBundle:Events/Lans:index }
+
+weeklies:
+  path: /events/weeklies
+  defaults: { _controller: AppBundle:Events/Weeklies:index }
+
+tournaments:
+  path: /events/tournaments
+  defaults: { _controller: AppBundle:Events/Tournaments:index }
+

@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="content">
+        <h1 class="LansH1">Weeklies</h1>
+        <p id="LansDetail">
+            EGS Weekly refers to our game nights that are every Wednesday at 8PM in the SAU Al Davis Room. Each week, either a new, indie, or requested game is featured among the our various games that are set up on our consoles, projectors, and televisions. During these hours, often EGS Communities will meet and participate in their specified special interest game whether it be Rhythm Gaming, DOTA 2, League of Legends, Blizzard games, etc. Everyone is welcome to kick back, unwind, and play video games with us!
+        </p>
+        <h1 class="LansH1">Upcoming Weeklies</h1>
+        <table>
+            <tbody>
+            <tr>
+                <a href="{{ asset('images/Events/Weeklies/EGS_ARMS WEEKLY.png') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/Weeklies/EGS_ARMS WEEKLY.png') }}" alt="">
+                </a>
+            </tr>
+            <tr>
+                <a href="#">
+                    <img class="Upcoming" style="" src="{{ asset('images/Events/Weeklies/PH.png') }}" alt="">
+                </a>
+            </tr>
+            </tbody>
+        </table>
+        <h1 class="LansH1">Past Weeklies</h1>
+        <table>
+            <tbody>
+            <tr>
+                <a href="{{ asset('images/Events/W1.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/W1.jpg') }}" alt="">
+                </a>
+                <a href="{{ asset('images/Events/W2.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/W2.jpg') }}" alt="">
+                </a>
+            </tr>
+            <tr>
+                <a href="{{ asset('images/Events/W3.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/W3.jpg') }}" alt="">
+                </a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}

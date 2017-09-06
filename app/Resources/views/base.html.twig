@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+            <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+        {% endblock %}
+        {% block javascripts %}
+            <script
+                    src="https://code.jquery.com/jquery-3.2.1.min.js"
+                    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                    crossorigin="anonymous"></script>
+            <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script type="text/javascript" src="{{ asset('js/head/nav.js') }}"></script>
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-105861767-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block header %}
+            <div id="header">
+                <div id="headerLogo">
+                    <img src="{{ asset('images/EGS_Logo.png') }}" id="logoImg" alt="EGS logo">
+                </div>
+
+                <div id="navbar">
+                    <ul id="nav">
+                        <li {{ top_type == 'home' ? 'class="active"' }}><a href="/" data-subtype="home">Home</a></li>
+                        <li {{ top_type == 'events' ? 'class="active"' }}><a href="#" data-subtype="events">Events</a></li>
+                        <li {{ top_type == 'communities' ? 'class="active"' }}><a href="#" data-subtype="communities">Communities</a></li>
+                        <li {{ top_type == 'about' ? 'class="active"' }}><a href="/about" data-subtype="about">About Us</a></li>
+                        <li {{ top_type == 'membership' ? 'class="active"' }}><a href="/membership" data-subtype="membership">Membership</a></li>
+                        <li {{ top_type == 'contact' ? 'class="active"' }}><a href="https://goo.gl/forms/mddKH55mYN5Qi3Ke2" data-subtype="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="events-navbar" {{ top_type != 'events' ? 'class="navbar-hidden"' }}>
+                    <ul id="nav" class="active">
+                        <li {{ sub_type == 'lans' ? 'class="active2"' }}><a href="/events/lans">LANs</a></li>
+                        <li {{ sub_type == 'weeklies' ? 'class="active2"' }}><a href="/events/weeklies">Weeklies</a></li>
+                        <li {{ sub_type == 'tournaments' ? 'class="active2"' }}><a href="/events/tournaments">Tournaments</a></li>
+                        <li {{ sub_type == 'reqevents' ? 'class="active2"' }}><a href="https://goo.gl/forms/Q7FZ5QWSAr1INAbE3">Event Request</a></li>
+                    </ul>
+                </div>
+                <div id="communities-navbar" {{ top_type != 'communities' ? 'class="navbar-hidden"' }}>
+                    <ul id="nav" class="active">
+                        <li {{ sub_type == 'pokemon' ? 'class="active2"' }}><a href="/communities/pokemon">Pokemon</a></li>
+                        <li {{ sub_type == 'dota2' ? 'class="active2"' }}><a href="/communities/dota2">DOTA2</a></li>
+                        <li {{ sub_type == 'rhythm' ? 'class="active2"' }}><a href="/communities/rhythm">Rhythm</a></li>
+                        <li {{ sub_type == 'minecraft' ? 'class="active2"' }}><a href="/communities/minecraft">Minecraft</a></li>
+                        <li {{ sub_type == 'blizzard' ? 'class="active2"' }}><a href="/communities/blizzard">Blizzard</a></li>
+                    </ul>
+                </div>
+                <a href="/membership">
+                    <div id="membership-navbar" {{ top_type != 'membership' ? 'class="navbar-hidden"' }}>
+                        <ul id="nav" class="active">
+                        </ul>
+                    </div>
+                </a>
+                <div id="contact-navbar" {{ top_type != 'contact' ? 'class="navbar-hidden"' }}>
+                    <ul id="nav" class="active">
+                    </ul>
+                </div>
+                <div id="about-navbar" {{ top_type != 'about' ? 'class="navbar-hidden"' }}>
+                    <ul id="nav" class="active">
+                    </ul>
+                </div>
+                <div id="home-navbar" {{ top_type != 'home' ? 'class="navbar-hidden"' }}">
+                    <ul id="nav" class="active">
+                    </ul>
+                </div>
+
+            </div>
+            <div id="container">
+                <div id="sidebar">
+                    <div id="innerSidebar" style="margin-top: 30px;">
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="//egsrit.us14.list-manage.com/subscribe/post?u=fe601b8447a6fa22601a03fe5&amp;id=4306715e27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <h3>Subscribe to our mailing list</h3>
+                                    <div class="mc-field-group">
+                                        <input type="email" value="" name="EMAIL" class="required email email2" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe601b8447a6fa22601a03fe5_4306715e27" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                        <!--End mc_embed_signup-->
+                        <br><br><br><br><br><br>
+                        <h2>Servers</h2>
+                        <br>
+                        <h4 class="serverName">Minecraft</h4>
+                        mc.ritcraft.net
+                        <br><br>
+                        <h4 class="serverName">TF2</h4>
+                        tf2.egsrit.com:27015
+                        <br><br>
+                        <h4 class="serverName">CSGO #1</h4>
+                        csgo.egsrit.com:27015
+                        <br><br>
+                        <h4 class="serverName">CSGO #2</h4>
+                        csgo.egsrit.com:27016
+                        <br><br><br><br><br><br>
+                        <a href="https://www.facebook.com/EGSRIT/" class="socialLink">
+                            <img class='socialImage' src="{{ asset('images/social/f_logo.png') }}" />
+                        </a>
+                        <a href="https://twitter.com/egsrit" class="socialLink">
+                            <img class='socialImage' src="{{ asset('images/social/twitter-bird-light-bgs.png') }}" />
+                        </a>
+                        <a href="https://www.twitch.tv/egs_rit" class="socialLink">
+                            <img class='socialImage' src="{{ asset('images/social/twitch_logo.png') }}" />
+                        </a>
+                        <br>
+                        <a href="https://steamcommunity.com/groups/egsrit" class="socialLink">
+                            <img class="socialImage" src="{{ asset('images/social/steam-icon-14871.png') }}" />
+                        </a>
+                        <a href="https://discord.gg/Mwmkjkq" class="socialLink">
+                            <img class='socialImage' src="{{ asset('images/social/discord_logo_transparent.png') }}" />
+                        </a>
+                        <a href="#" class="socialLink">
+                            <img class='socialImage' src="{{ asset('images/social/Reddit-The-Official-App-Icon.png') }}" />
+                        </a>
+
+                    </div>
+                </div>
+                {% block content %}{% endblock %}
+            </div>
+            <div class="footer">Development | Christopher Bitler |
+                Website Concept Design | Makaya Hicks &amp; L.A. Stapleford |
+                Website Original Concept | Andrew "CodeMaster" Kane
+                <br> Copyright Electronic Gaming Society at Rochester Institute of Technology (C) 2017
+            </div>
+        {% endblock %}
+    </body>
+</html>
