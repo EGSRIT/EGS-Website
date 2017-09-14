@@ -427,6 +427,13 @@ h2{
 	margin: 20px 40px 5px 40px;
 }
 
+.rules-link {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size:18px;
+	text-decoration: underline;
+	color: white;
+}
+
 #LAN b {
 	font-weight: bold;
 }
