@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} EGS Legends: LAN of the Wild {% endblock %}
+
+{% block content %}
+    <div id="content">
+        <div style="width: 765px; height: 239px; text-align:center; font-size:40px; vertical-align: middle;">
+            EGS Legends: LAN of the Wild
+        </div>
+        <p id="LansDetail">
+            EGS hosts three 24+ hour LAN parties that are scheduled in the Fall, Winter, and Spring. Come find a spot to game with your fellow community members and enjoy our tournaments, 'out of game' games, streams, and the famous GG Giveaway featuring swag and hardware from the EGS Sponsors! Be sure to BYOC, ethernet cable, and surge protector!
+        </p>
+        <h1 class="LansH1">Upcoming LANs</h1>
+        <h1 class="LansH1">Past LANs</h1>
+        <table>
+            <tbody>
+            <tr>
+                <a href="{{ asset('images/Events/U1.png') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/U1.png') }}" alt="">
+                </a>
+                <a href="{{ asset('images/Events/L1.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/L1.jpg') }}" alt="">
+                </a>
+            </tr>
+            <tr>
+                <a href="{{ asset('images/Events/L2.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/L2.jpg') }}" alt="">
+                </a>
+                <a href="{{ asset('images/Events/L3.jpg') }}">
+                    <img class="Upcoming" src="{{ asset('images/Events/L3.jpg') }}" alt="">
+                </a>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}

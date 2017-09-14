@@ -38,6 +38,9 @@ lans:
   path: /events/lans
   defaults: { _controller: AppBundle:Events/Lans:index }
 
+LAN:
+  path: /events/LAN
+  defaults: { _controller: AppBundle:Events/LAN:index }
 weeklies:
   path: /events/weeklies
   defaults: { _controller: AppBundle:Events/Weeklies:index }
