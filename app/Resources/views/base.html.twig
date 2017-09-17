@@ -47,6 +47,7 @@
                 </div>
                 <div id="events-navbar" {{ top_type != 'events' ? 'class="navbar-hidden"' }}>
                     <ul id="nav" class="active">
+                        <li {{ sub_type == 'lan' ? 'class="active2"' }}><a href="/events/LAN">LAN of the Wild</a></li>
                         <li {{ sub_type == 'lans' ? 'class="active2"' }}><a href="/events/lans">LANs</a></li>
                         <li {{ sub_type == 'weeklies' ? 'class="active2"' }}><a href="/events/weeklies">Weeklies</a></li>
                         <li {{ sub_type == 'tournaments' ? 'class="active2"' }}><a href="/events/tournaments">Tournaments</a></li>
