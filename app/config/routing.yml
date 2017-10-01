@@ -36,7 +36,7 @@ membership:
 
 gamelibrary:
   path: /gamelibrary
-  defaults: { _controller: AppBundle:Membership/GameLibrary:index }
+  defaults: { _controller: AppBundle:GameLibrary/GameLibrary:index }
 
 lans:
   path: /events/lans

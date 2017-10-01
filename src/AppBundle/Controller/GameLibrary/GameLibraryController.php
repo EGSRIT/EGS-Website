@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AppBundle\Controller\Membership;
+namespace AppBundle\Controller\GameLibrary;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
