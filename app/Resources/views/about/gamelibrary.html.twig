@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Membership {% endblock %}
+
+{% block content %}
+    <div id="content">
+        <h1 id="memberH1">Game Library</h1>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRECq5XjfLFVvkj3xU3J6_lwjUIYZRe7tlt5LolZ2_FGtyKamg04pZndmDflHIpD58DxvnWoGrWRR0X/pubhtml?widget=true&amp;headers=false"></iframe>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}
