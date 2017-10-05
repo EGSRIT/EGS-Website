@@ -3,39 +3,29 @@
 {% block title %} Tournaments {% endblock %}
 
 {% block content %}
-    <div id="content">
-        <h1 class="LansH1">Tournaments</h1>
-        <p id="LansDetail">
-            EGS runs tournaments that are paid entry by individual or teams. We create the bracket, stream, and develop a prize pool in which you can have a chance of winning! Therefore, practice up on those gaming skills!
-        </p>
-        <h1 class="LansH1">Upcoming Tournaments</h1>
-        <h1 class="LansH1">Past Tournaments</h1>
-        <table>
-            <tbody>
-            <tr>
-                <a href="{{ asset('images/Events/T1.jpg') }}">
-                    <img class="Upcoming" src="{{ asset('images/Events/T1.jpg') }}" alt="">
-                </a>
-                <a href="{{ asset('images/Events/T2.jpg') }}">
-                    <img class="Upcoming" src="{{ asset('images/Events/T2.jpg') }}" alt="">
-                </a>
-            </tr>
-            <tr>
-                <a href="{{ asset('images/Events/T3.jpg') }}">
-                    <img class="Upcoming" src="{{ asset('images/Events/T3.jpg') }}" alt="">
-                </a>
-            </tr>
-            </tbody>
-        </table>
+    <h1>Tournaments</h1>
+    <p>
+        EGS runs tournaments that are paid entry by individual or teams.
+        We create the bracket, stream, and develop a prize pool in which you can have a chance of winning!
+        Therefore, practice up on those gaming skills!
+    </p>
+    <h1>Upcoming Tournaments</h1>
+    <h1>Past Tournaments</h1>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <a href="{{ asset('images/Events/T1.jpg') }}">
+                <img class="img-fluid" src="{{ asset('images/Events/T1.jpg') }}" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-md-6">
+            <a href="{{ asset('images/Events/T2.jpg') }}">
+                <img class="img-fluid" src="{{ asset('images/Events/T2.jpg') }}" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-md-6">
+            <a href="{{ asset('images/Events/T3.jpg') }}">
+                <img class="img-fluid" src="{{ asset('images/Events/T3.jpg') }}" alt="">
+            </a>
+        </div>
     </div>
-{% endblock %}
-
-{% block stylesheets %}
-    {{  parent() }}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
 {% endblock %}

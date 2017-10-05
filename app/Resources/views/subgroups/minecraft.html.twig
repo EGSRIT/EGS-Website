@@ -3,29 +3,21 @@
 {% block title %} Minecraft Community {% endblock %}
 
 {% block content %}
-    <div id="content">
-        <img src="{{ asset('images/Subgroup/Minecraft/Banner.png') }}">
-        <p id="intro">
-            Join the official Minecraft community of RIT and EGS, RITcraft! RITcraft is a Minecraft survival server where members of the community can work on projects, colonize the world, and build your empire. RITcraft runs the latest version of Spigot and stays up-to-date with the development of Minecraft.
-        </p>
-        <div class="community-important">
-            <div class="community-important-info-header">Server Information</div>
-            <div class="community-important-info">Server: mc.ritcraft.net</div>
-            <div class="community-important-info">Website: ritcraft.net</div>
-            <div class="community-important-info">Slack: ritcraft.slack.com/signup</div>
-        </div>
-        <br>
-        <div class="board-header">E-Board</div>
-        {% include 'utility/board.html.twig' %}
+    <div class="text-center">
+        <img class="img-fluid" src="{{ asset('images/Subgroup/Minecraft/Banner.png') }}">
     </div>
-{% endblock %}
-
-{% block stylesheets %}
-    {{  parent() }}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+    <p>
+        Join the official Minecraft community of RIT and EGS, RITcraft!
+        RITcraft is a Minecraft survival server where members of the community can work on projects, colonize the world, and build your empire.
+        RITcraft runs the latest version of Spigot and stays up-to-date with the development of Minecraft.
+    </p>
+    <p>Server Information</p>
+    <ul>
+        <li>Server: mc.ritcraft.net</li>
+        <li>Website: ritcraft.net</li>
+        <li>Slack: ritcraft.slack.com/signup</li>
+    </ul>
+    <br>
+    <h2>E-Board</h2>
+    {% include 'utility/board.html.twig' %}
 {% endblock %}
