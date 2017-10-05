@@ -18,7 +18,7 @@ body {
 .nav-item.active, .dropdown:hover, .dropdown-menu, .dropdown-item, .dropdown.show, button, input.btn, .bg-egs-orange {
     background-color: #FF8000;
 }
-.dropdown-item {
+.dropdown-item, a.btn {
     color: white;
 }
 article, aside, nav, footer .container, .aside {
