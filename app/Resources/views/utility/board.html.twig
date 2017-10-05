@@ -1,35 +1,25 @@
-{% set newRow = 0 %}
-<table class="board-table">
-    <tr class="board-row">
-        {% for member in board %}
+<div class="row">
+    {% for member in board %}
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card bg-dark" style="margin-top:.75rem;">
             {% if member.name != 'none' %}
-                <td class="board-picture"><img class='board-picture-img' src="{{ asset(member.img) }}"></td>
+                <img class="card-img-top" src="{{ asset(member.img) }}">
             {% endif %}
-            <td class="board-text">
-                <div class="board-text-inner">
-                    <span class="board-position"> {{ member.position }}</span><br><br>
-                    <span class="board-member-details">
-                        {% if member.name != 'none' %}
-                            {{ member.name }}
-                        {% endif %}
-                        <br>
-                        {% if member.username is defined %}
-                            {{ member.username }} <br>
-                        {% endif %}
-                        {% if member.email is defined %}
-                            {{ member.email }}
-                        {% endif %}
-                    </span>
-                </div>
-            </td>
-            {% if newRow == 1 %}
-                {% set newRow = 0 %}
-                </tr>
-                <tr class="board-divider-row"></tr>
-                <tr class="board-row">
-                    {% else %}
-                        {% set newRow = 1 %}
+            <div class="card-body">
+                {% if member.name != 'none' %}
+                    <h4 class="card-title">{{ member.name }}</h4>
+                {% endif %}
+                <h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
+                <p class="card-text">
+                    {% if member.username is defined %}
+                        {{ member.username }} <br>
                     {% endif %}
-        {% endfor %}
-    </tr>
-</table>
+                    {% if member.email is defined %}
+                        {{ member.email }}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

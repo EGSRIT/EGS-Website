@@ -17,3 +17,5 @@ Website Concept and Design:
 - L.A Stapleford
 
 Original website concept: Andrew "CodeMaster" Kane
+
+2017 new theme: Christian Martin
