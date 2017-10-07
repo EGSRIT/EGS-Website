@@ -1,15 +1,17 @@
 <?php
 
-namespace AppBundle\Controller\Events;
+
+namespace AppBundle\Controller\GameLibrary;
+
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Controller for the LANs page
+ * Controller for the membership page
  * @author Christopher Bitler <webmaster@egsrit.com>
  */
-class LANController extends Controller
+class GameLibraryController extends Controller
 {
 
     /**
@@ -19,10 +21,10 @@ class LANController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('events/lan.html.twig', [
+        return $this->render('about/gamelibrary.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
-            'top_type' => 'events',
-            'sub_type' => 'lan',
+            'top_type' => 'membership',
+            'sub_type' => '',
         ]);
     }
 }
