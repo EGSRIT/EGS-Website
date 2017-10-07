@@ -22,7 +22,7 @@ class LANController extends Controller
         return $this->render('events/lan.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
             'top_type' => 'events',
-            'sub_type' => 'lans',
+            'sub_type' => 'lan',
         ]);
     }
 }
