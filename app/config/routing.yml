@@ -26,10 +26,6 @@ eboard:
   path: /about
   defaults: { _controller: AppBundle:Eboard/EBoard:index }
 
-rhythm:
-  path: /communities/rhythm
-  defaults: { _controller: AppBundle:Subgroups/Rhythm:index }
-
 membership:
   path: /membership
   defaults: { _controller: AppBundle:Membership/Membership:index }

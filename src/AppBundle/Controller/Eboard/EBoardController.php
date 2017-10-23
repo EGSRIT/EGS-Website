@@ -35,11 +35,11 @@ class EBoardController extends Controller
     private function getBoard() {
         return array(
             [
-                'name' => 'Makaya Hicks',
-                'position' => 'President',
-                'email' => 'president@egsrit.com',
-                'username' => '베이컨',
-                'img' => 'images/About/makaya.jpg'
+                'name' => 'Dominic Rigney',
+                'position' => 'Interim President',
+                'email' => 'treasurer@egsrit.com',
+                'username' => 'Magicking610',
+                'img' => 'images/About/dom.jpg'
             ],
             [
                 'name' => 'Elizabeth Lucas',
@@ -61,13 +61,6 @@ class EBoardController extends Controller
                 'email' => 'console@egsrit.com',
                 'username' => 'LinkSean',
                 'img' => 'images/About/sean.jpg'
-            ],
-            [
-                'name' => 'Dominic Rigney',
-                'position' => 'Treasurer',
-                'email' => 'treasurer@egsrit.com',
-                'username' => 'Magicking610',
-                'img' => 'images/About/dom.jpg'
             ],
             [
                 'name' => 'Humza Syed',
@@ -108,13 +101,6 @@ class EBoardController extends Controller
                 'email' => 'ritcraft@egsrit.com',
                 'img' => 'images/About/justin.jpg'
             ],
-            [
-                'name' => 'Alex Pasieka',
-                'position' => 'Rhythm gaming President',
-                'email' => 'asp1610@rit.edu',
-                'username' => 'Afroxide',
-                'img' => 'images/About/alex.jpg'
-            ]
         );
     }
 }
