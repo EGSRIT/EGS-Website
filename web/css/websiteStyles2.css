@@ -447,6 +447,13 @@ h2{
 	width: 28%;
 }
 
+.trendnet-sponsor {
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
 /* Preload Images for Events Page */
 body:after {
   content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
