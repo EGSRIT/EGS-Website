@@ -53,12 +53,6 @@ class MinecraftController extends Controller
                 'username' => 'bowlnmike',
                 'img' => 'images/Subgroup/Minecraft/Michael.jpg'
             ],
-            [
-                'name' => 'Ari DeGolyer',
-                'position' => 'Moderator',
-                'username' => 'Goldyeer',
-                'img' => 'images/Subgroup/Minecraft/Ari.jpg'
-            ]
         );
     }
 }
