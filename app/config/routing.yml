@@ -39,7 +39,7 @@ lans:
   defaults: { _controller: AppBundle:Events/Lans:index }
 
 LAN:
-  path: /events/LAN
+  path: /LAN
   defaults: { _controller: AppBundle:Events/LAN:index }
 
 winter:
