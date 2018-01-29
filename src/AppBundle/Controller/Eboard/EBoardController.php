@@ -35,13 +35,6 @@ class EBoardController extends Controller
     private function getBoard() {
         return array(
             [
-                'name' => 'Dominic Rigney',
-                'position' => 'Interim President',
-                'email' => 'treasurer@egsrit.com',
-                'username' => 'Magicking610',
-                'img' => 'images/About/dom.jpg'
-            ],
-            [
                 'name' => 'Elizabeth Lucas',
                 'position' => 'President',
                 'email' => 'president@egsrit.com',
@@ -54,6 +47,12 @@ class EBoardController extends Controller
                 'email' => 'vicepresident@egsrit.com',
                 'username' => 'EMatter',
                 'img' => 'images/About/evan.jpg'
+            ],
+            [
+                'name' => '???',
+                'position' => 'LAN Officer',
+                'email' => 'lan@egsrit.com',
+                'img' => 'images/About/PH.png'
             ],
             [
                 'name' => 'Sean Mack',
@@ -70,13 +69,6 @@ class EBoardController extends Controller
                 'img' => 'images/About/humza.jpg'
             ],
             [
-                'name' => 'Sean Newman',
-                'position' => 'LAN Officer',
-                'email' => 'lan@egsrit.com',
-                'username' => 'dude2818',
-                'img' => 'images/About/SeanN.png'
-            ],
-            [
                 'name' => 'Chris Bitler',
                 'position' => 'Webmaster',
                 'email' => 'webmaster@egsrit.com',
@@ -90,10 +82,10 @@ class EBoardController extends Controller
                 'img' => 'images/About/peterkillian.jpg'
             ],
             [
-                'name' => 'Sam Belisle',
+                'name' => '???',
                 'position' => 'DOTA2 President',
                 'email' => 'dota2@egsrit.com',
-                'img' => 'images/About/samb.jpg'
+                'img' => 'images/About/PH.png'
             ],
             [
                 'name' => 'Justin Flory',

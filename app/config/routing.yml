@@ -42,7 +42,7 @@ LAN:
   path: /LAN
   defaults: { _controller: AppBundle:Events/LAN:index }
 
-LAN:
+lan:
   path: /lan
   defaults: { _controller: AppBundle:Events/LAN:index }
 

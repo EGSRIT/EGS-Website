@@ -2,26 +2,53 @@
 <table class="board-table">
     <tr class="board-row">
         {% for member in board %}
-            {% if member.name != 'none' %}
-                <td class="board-picture"><img class='board-picture-img' src="{{ asset(member.img) }}"></td>
+            {% if newRow == 0 %}
+
+                {% if member.name != 'none' %}
+                    <td class="board-picture"><img class='board-picture-img' src="{{ asset(member.img) }}"></td>
+                {% endif %}
+                <td class="board-text">
+                    <div class="board-text-inner">
+                        <span class="board-position"> {{ member.position }}</span><br><br>
+                        <span class="board-member-details">
+                            {% if member.name != 'none' %}
+                                {{ member.name }}
+                            {% endif %}
+                            <br>
+                            {% if member.username is defined %}
+                                {{ member.username }} <br>
+                            {% endif %}
+                            {% if member.email is defined %}
+                                {{ member.email }}
+                            {% endif %}
+                        </span>
+                    </div>
+                </td>
+
+            {% else %}
+
+                <td class="board-text right-align">
+                    <div class="board-text-inner">
+                        <span class="board-position"> {{ member.position }}</span><br><br>
+                        <span class="board-member-details">
+                            {% if member.name != 'none' %}
+                                {{ member.name }}
+                            {% endif %}
+                            <br>
+                            {% if member.username is defined %}
+                                {{ member.username }} <br>
+                            {% endif %}
+                            {% if member.email is defined %}
+                                {{ member.email }}
+                            {% endif %}
+                        </span>
+                    </div>
+                </td>
+                {% if member.name != 'none' %}
+                    <td class="board-picture"><img class='board-picture-img' src="{{ asset(member.img) }}"></td>
+                {% endif %}
+
             {% endif %}
-            <td class="board-text">
-                <div class="board-text-inner">
-                    <span class="board-position"> {{ member.position }}</span><br><br>
-                    <span class="board-member-details">
-                        {% if member.name != 'none' %}
-                            {{ member.name }}
-                        {% endif %}
-                        <br>
-                        {% if member.username is defined %}
-                            {{ member.username }} <br>
-                        {% endif %}
-                        {% if member.email is defined %}
-                            {{ member.email }}
-                        {% endif %}
-                    </span>
-                </div>
-            </td>
             {% if newRow == 1 %}
                 {% set newRow = 0 %}
                 </tr>

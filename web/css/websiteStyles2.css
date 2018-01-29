@@ -696,6 +696,10 @@ body:after {
 	vertical-align: top;
 }
 
+.right-align {
+	text-align: right;
+}
+
 .board-text-inner {
 	margin-top: 5px;
 	margin-left: 5px;
@@ -704,6 +708,7 @@ body:after {
 
 .board-table {
 	width: 600px;
+	margin-right: auto;
 	margin-left: auto;
 }
 
