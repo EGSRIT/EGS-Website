@@ -680,6 +680,10 @@ body:after {
 	margin-left: 10px;
 }
 
+.board-picture-right {
+	padding-left: 5px;
+}
+
 .board-picture-img {
 	width: 100px;
 	height: 100px;
