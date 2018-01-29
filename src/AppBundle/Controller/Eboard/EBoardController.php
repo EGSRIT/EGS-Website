@@ -49,6 +49,13 @@ class EBoardController extends Controller
                 'img' => 'images/About/evan.jpg'
             ],
             [
+                'name' => 'Tyler Arnett',
+                'position' => 'Treasurer',
+                'email' => 'treasurer@egsrit.com',
+                'username' => 'Submachinegun',
+                'img' => 'images/About/tyler.jpg'
+            ],
+            [
                 'name' => '???',
                 'position' => 'LAN Officer',
                 'email' => 'lan@egsrit.com',
@@ -60,6 +67,13 @@ class EBoardController extends Controller
                 'email' => 'console@egsrit.com',
                 'username' => 'LinkSean',
                 'img' => 'images/About/sean.jpg'
+            ],
+            [
+                'name' => 'Lauren Suter',
+                'position' => 'Marketing Director',
+                'email' => 'marketing@egsrit.com',
+                'username' => 'Freyja',
+                'img' => 'images/About/lauren.jpg'
             ],
             [
                 'name' => 'Humza Syed',
