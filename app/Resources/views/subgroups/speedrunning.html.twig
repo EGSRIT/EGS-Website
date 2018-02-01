@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Speedrunning Community {% endblock %}
+
+{% block content %}
+    <div id="content">
+        <img src="{{ asset('images/Subgroup/Speedrunning/Banner_EGS_Sized.png') }}">
+        <p id="intro">
+            An intercollegiate group of gamers based at RIT but also from UoR and the Rochester area with the goal of completing games as quickly as possible.
+        </p>
+        <div class="community-important">
+            <div class="community-important-info-header">Meeting</div>
+            <div class="community-important-info">Gleason 1149: Sat 12PM-6PM </div>
+            <br>
+            <div class="community-important-info">Discord: discord.gg/PPV39G</div>
+        </div>
+        <br>
+        <div class="board-header">E-Board</div>
+        {% include 'utility/board.html.twig' %}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{  parent() }}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/websiteStyles2.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/homepage/homepage.js') }}"></script>
+{% endblock %}

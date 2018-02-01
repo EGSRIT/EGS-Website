@@ -107,6 +107,11 @@ class EBoardController extends Controller
                 'email' => 'ritcraft@egsrit.com',
                 'img' => 'images/About/justin.jpg'
             ],
+            [
+                'name' => 'Nathan Terrell',
+                'position' => 'Speedrunning President',
+                'img' => 'images/Subgroup/Speedrunning/nathan.jpg'
+            ],
         );
     }
 }
