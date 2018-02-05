@@ -22,6 +22,10 @@ dota2:
   path: /communities/dota2
   defaults: { _controller: AppBundle:Subgroups/DOTA2:index }
 
+speedrunning:
+  path: /communities/speedrunning
+  defaults: { _controller: AppBundle:Subgroups/Speedrunning:index }
+
 eboard:
   path: /about
   defaults: { _controller: AppBundle:Eboard/EBoard:index }
