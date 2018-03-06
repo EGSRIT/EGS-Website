@@ -40,19 +40,7 @@ class MinecraftController extends Controller
                 'username' => 'jflory7',
                 'email' => 'ritcraft@egsrit.com',
                 'img' => 'images/About/Minecraft.jpg'
-            ],
-            [
-                'name' => 'Jeremy Jackson',
-                'position' => 'Moderator',
-                'username' => 'jay94j',
-                'img' => 'images/Subgroup/Minecraft/Jeremy.jpg'
-            ],
-            [
-                'name' => 'Michael Nixt',
-                'position' => 'Moderator',
-                'username' => 'bowlnmike',
-                'img' => 'images/Subgroup/Minecraft/Michael.jpg'
-            ],
+            ]
         );
     }
 }

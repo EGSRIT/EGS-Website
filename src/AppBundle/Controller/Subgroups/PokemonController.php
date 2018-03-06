@@ -45,11 +45,6 @@ class PokemonController extends Controller
                 'name' => 'Jeffrey Karger',
                 'position' => 'Vice President',
                 'img' => 'images/About/PH.png'
-            ],
-            [
-                'name' => 'Matthew Colosi',
-                'position' => 'E-Sports Coordinator',
-                'img' => 'images/About/PH.png'
             ]
         );
     }
