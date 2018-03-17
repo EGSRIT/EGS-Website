@@ -8,42 +8,7 @@
         <p id="LansDetail">
             EGS Weekly refers to our game nights that are every Wednesday at 8PM in the SAU Al Davis Room. Each week, either a new, indie, or requested game is featured among the our various games that are set up on our consoles, projectors, and televisions. During these hours, often EGS Communities will meet and participate in their specified special interest game whether it be Rhythm Gaming, DOTA 2, League of Legends, Blizzard games, etc. Everyone is welcome to kick back, unwind, and play video games with us!
         </p>
-        <h1 class="LansH1">Upcoming Weeklies</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <a href="{{ asset('images/Events/Weeklies/Weekly-IDARB-PNG.png') }}">
-                        <img class="Upcoming" src="{{ asset('images/Events/Weeklies/Weekly-IDARB-PNG.png') }}" alt="">
-                    </a>
-                </tr>
-            <!--<tr>
-                <a href="#">
-                    <img class="Upcoming" style="" src="{{ asset('images/Events/Weeklies/PH.png') }}" alt="">
-                </a>
-            </tr>-->
-            </tbody>
-        </table>
-        <h1 class="LansH1">Past Weeklies</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <a href="{{ asset('images/Events/Weeklies/Weekly-Ultimate-Chicken-Horse-PNG.png') }}">
-                        <img class="Upcoming" src="{{ asset('images/Events/Weeklies/Weekly-Ultimate-Chicken-Horse-PNG.png') }}" alt="">
-                    </a>
-                    <a href="{{ asset('images/Events/Weeklies/Weekly-Gang-Beasts-PNG.png') }}">
-                        <img class="Upcoming" src="{{ asset('images/Events/Weeklies/Weekly-Gang-Beasts-PNG.png') }}" alt="">
-                    </a>
-                </tr>
-                <tr>
-                    <a href="{{ asset('images/Events/Weeklies/Weekly-Keep-Talking-PNG.png') }}">
-                        <img class="Upcoming" src="{{ asset('images/Events/Weeklies/Weekly-Keep-Talking-PNG.png') }}" alt="">
-                    </a>
-                    <a href="{{ asset('images/Events/Weeklies/EGS_ARMS WEEKLY.png') }}">
-                        <img class="Upcoming" src="{{ asset('images/Events/Weeklies/EGS_ARMS WEEKLY.png') }}" alt="">
-                    </a>
-                </tr>
-            </tbody>
-        </table>
+        {% include 'utility/weeklies.html.twig' %}
     </div>
 {% endblock %}
 

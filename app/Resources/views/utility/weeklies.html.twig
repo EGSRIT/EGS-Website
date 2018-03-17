@@ -1,0 +1,37 @@
+{% set newRow = 0 %}
+<h1 class="LansH1">Upcoming Weeklies</h1>
+<table>
+    <tbody>
+    <tr>
+    {% for picture in pictures_upcoming %}
+        <a href="{{ asset('images/Events/Weeklies/' ~ picture.img) }}">
+            <img class="Upcoming" src="{{ asset('images/Events/Weeklies/' ~ picture.img) }}" alt="">
+        </a>
+        {% if newRow == 1 %}
+            </tr>
+            <tr>
+        {% else %}
+            {% set newRow = 1 %}
+        {% endif %}
+    {% endfor %}
+            </tr>
+    </tbody>
+</table>
+<h1 class="LansH1">Past Weeklies</h1>
+<table>
+    <tbody>
+    <tr>
+        {% for picture in pictures_past %}
+            <a href="{{ asset('images/Events/Weeklies/' ~ picture.img) }}">
+                <img class="Upcoming" src="{{ asset('images/Events/Weeklies/' ~ picture.img) }}" alt="">
+            </a>
+            {% if newRow == 1 %}
+                </tr>
+                <tr>
+            {% else %}
+                {% set newRow = 1 %}
+            {% endif %}
+        {% endfor %}
+    </tr>
+    </tbody>
+</table>
