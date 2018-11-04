@@ -35,25 +35,25 @@ class EBoardController extends Controller
     private function getBoard() {
         return array(
             [
-                'name' => 'Elizabeth Lucas',
+                'name' => 'Evan Misiorski',
                 'position' => 'President',
                 'email' => 'president@egsrit.com',
-                'username' => 'LizardLucas',
-                'img' => 'images/About/liz.jpg'
-            ],
-            [
-                'name' => 'Evan Misiorski',
-                'position' => 'Vice President',
-                'email' => 'vicepresident@egsrit.com',
                 'username' => 'EMatter',
                 'img' => 'images/About/evan.jpg'
             ],
             [
-                'name' => 'Tyler Arnett',
+                'name' => 'Sean Mack',
+                'position' => 'Vice President',
+                'email' => 'vicepresident@egsrit.com',
+                'username' => 'LinkSean',
+                'img' => 'images/About/sean.jpg'
+            ],
+            [
+                'name' => 'Lauren Paige',
                 'position' => 'Treasurer',
                 'email' => 'treasurer@egsrit.com',
-                'username' => 'Submachinegun',
-                'img' => 'images/About/tyler.jpg'
+                'username' => 'Paige',
+                'img' => 'images/About/laurenP.jpg'
             ],
             [
                 'name' => '???',
@@ -62,11 +62,11 @@ class EBoardController extends Controller
                 'img' => 'images/About/PH.png'
             ],
             [
-                'name' => 'Sean Mack',
+                'name' => 'Kengar Dongatron',
                 'position' => 'Console Officer',
                 'email' => 'console@egsrit.com',
-                'username' => 'LinkSean',
-                'img' => 'images/About/sean.jpg'
+                'username' => 'Kengar',
+                'img' => 'images/About/kengar.jpg'
             ],
             [
                 'name' => 'Lauren Suter',
@@ -76,18 +76,18 @@ class EBoardController extends Controller
                 'img' => 'images/About/lauren.jpg'
             ],
             [
-                'name' => 'Humza Syed',
+                'name' => 'Sam James',
                 'position' => 'Secretary',
                 'email' => 'secretary@egsrit.com',
-                'username' => 'flarelink',
-                'img' => 'images/About/humza.jpg'
+                'username' => 'Sam(Also Sam)',
+                'img' => 'images/About/PH.png'
             ],
             [
-                'name' => 'Chris Bitler',
+                'name' => 'Stoney Reed',
                 'position' => 'Webmaster',
                 'email' => 'webmaster@egsrit.com',
-                'username' => 'VoidWhisperer',
-                'img' => 'images/About/Webmaster.jpg'
+                'username' => 'Stoney',
+                'img' => 'images/About/PH.png'
             ],
             [
                 'name' => 'Peter Killian',
@@ -102,10 +102,10 @@ class EBoardController extends Controller
                 'img' => 'images/About/PH.png'
             ],
             [
-                'name' => 'Justin Flory',
+                'name' => '???',
                 'position' => 'Minecraft President',
                 'email' => 'ritcraft@egsrit.com',
-                'img' => 'images/About/justin.jpg'
+                'img' => 'images/About/PH.png'
             ],
             [
                 'name' => 'Nathan Terrell',
